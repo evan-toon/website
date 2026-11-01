@@ -1670,3 +1670,51 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+
+/* About Me image layout */
+
+#about-me .image-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 30px 0;
+}
+
+#about-me .image-row img {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+#about-me .image-single {
+    display: block;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+#about-me .image-single img {
+    width: 65%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 480px) {
+    #about-me .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-me .image-row img {
+        width: 100%;
+    }
+
+    #about-me .image-single img {
+        width: 85%;
+    }
+}
